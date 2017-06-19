@@ -10,6 +10,8 @@ body {
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  webkit-tap-highlight-color: #222222;
+  background-color: #000000;
 }
 hr {
   border-color: #0EFFE5;
@@ -42,9 +44,16 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+/*
 .bg-primary {
-  background-color: #F05F40;
+  background: #000000; /* For browsers that do not support gradients 
+  background: -webkit-linear-gradient(#5B1112, #000000); /* For Safari 5.1 to 6.0 
+  background: -o-linear-gradient(#5B1112, #000000); /* For Opera 11.1 to 12.0 
+  background: -moz-linear-gradient(#000000, #5B1112); /* For Firefox 3.6 to 15 
+  background: linear-gradient(#000000, #5B1112, #053B47); /* Standard syntax 
 }
+*/
+
 .bg-dark {
   background-color: #222222;
   color: white;
@@ -146,6 +155,7 @@ aside {
     color: #F05F40;
   }
 }
+
 header {
   position: relative;
   width: 100%;
@@ -155,7 +165,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/headers1.jpg');
+  background-image: url('../img/header1.jpg');
   text-align: center;
   color: white;
 }
@@ -181,6 +191,7 @@ header .header-content .header-content-inner p {
   font-size: 16px;
   margin-bottom: 50px;
 }
+
 @media (min-width: 768px) {
   header {
     min-height: 100%;
@@ -203,22 +214,31 @@ header .header-content .header-content-inner p {
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .inner-box {
     padding: 0px;
-   /* color: #E9F1F7; */
-    background-color: #000000;
     margin-left: auto;
     margin-right: auto;
-    width: 450px;
-    border-radius: 10px;
     margin-top: 200px;
+    max-width: 450px;
+    height: 200px;
+    background-image: url('../img/innerbox1.jpg');
 }
+
+.p5{
+  padding: 0px;
+  /*width: 450px;*/
+  /*height: 200px;*/
+  position: relative;
+}
+
+#p5js{
+
+  position: fixed;
+}
+
 
 .section-heading {
   margin-top: 0;
@@ -245,7 +265,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -423,8 +443,3 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
-body {
-  webkit-tap-highlight-color: #222222;
-}
-.p5{padding-right: 300px;
-    }
