@@ -46,20 +46,7 @@ p {
   margin-bottom: 20px;
   color: white;
 }
-/*
-.bg-primary {
-  background: #000000; /* For browsers that do not support gradients 
-  background: -webkit-linear-gradient(#5B1112, #000000); /* For Safari 5.1 to 6.0 
-  background: -o-linear-gradient(#5B1112, #000000); /* For Opera 11.1 to 12.0 
-  background: -moz-linear-gradient(#000000, #5B1112); /* For Firefox 3.6 to 15 
-  background: linear-gradient(#000000, #5B1112, #053B47); /* Standard syntax 
-}
-*/
 
-.bg-dark {
-  background-color: #222222;
-  color: white;
-}
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -218,29 +205,6 @@ header .header-content .header-content-inner p {
     font-size: 18px;
   }
 }
-
-.inner-box {
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
-    max-width: 450px;
-    height: 200px;
-    background-image: url('../img/innerbox1.jpg');
-}
-
-.p5{
-  padding: 0px;
-  /*width: 450px;*/
-  /*height: 200px;*/
-  position: relative;
-}
-
-#p5js{
-
-  position: fixed;
-}
-
 
 .section-heading {
   margin-top: 0;
