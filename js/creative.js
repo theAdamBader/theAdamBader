@@ -1,4 +1,7 @@
 (function($) {
+
+    $('.site-wrapper').css('min-height', screen.height); // or anyother like window.height
+    
     "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -11,10 +14,10 @@
     });
 
     // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
+    // $('body').scrollspy({
+    //     target: '.navbar-fixed-top',
+    //     offset: 51
+    // });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -51,14 +54,14 @@
         type: 'image',
         tLoading: 'Loading image #%curr%...',
         mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        }
+        // gallery: {
+        //     enabled: true,
+        //     navigateByImgClick: true,
+        //     preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        // },
+        // image: {
+        //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        // }
     });
 
 })(jQuery); // End of use strict
