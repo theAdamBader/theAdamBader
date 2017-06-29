@@ -84,16 +84,16 @@ footer {
 }
 
 #homeHeading{
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .headerTitle{
-  font-family: 'Open Sans', 'Helvetica Neue', Brush Script MT, Script;
+  font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Serif
 }
 
 .paraTitle{
-  font-family: 'Open Sans', 'Helvetica Neue', Brush Script MT, Script;
-  font-size: 25px;
+  font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Serif;
+  font-size: 22px;
 }
 
 /*.dropbtn {
