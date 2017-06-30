@@ -1,28 +1,21 @@
 function Sprites(){
 
-var ranger = new Array(3);
-var ranger1 = new Array(2);
+var hearts = new Array(20);
 var context = canvas.getContext("2d");
 var currentImage = 0;
 var frameStartTime = 0;
-var x = 32;
-var x1 = 382;
-var y = 140;
+var x = 10;
+var y = 32;
 
 Sprites.prototype.set = function(){
-	for(var i = 0; i < ranger.length; i++){
-	    ranger[i] = loadImage("./img/assets/ranger/attack"+i+".png");
+	for(var i = 0; i < hearts.length; i++){
+	    hearts[i] = loadImage("./img/assets/sprite/heart"+i+".png");
 	}
-  for(var i = 0; i < ranger1.length; i++){
-      ranger1[i] = loadImage("./img/assets/ranger/idle"+i+".png");
-  }
 }
 
 Sprites.prototype.display = function() {
     context.clearRect(x, y, displayWidth, displayHeight);
-    //context.clearRect(x + 350, y, 32, 32);
-    image(ranger[currentImage], x, y);
-    image(ranger1[currentImage], x1, y);
+    image(hearts[currentImage], x, y);
   }
 
 Sprites.prototype.update = function() {
@@ -34,9 +27,9 @@ Sprites.prototype.update = function() {
     
       currentImage ++;//increments the image by one every frame
       
-      if (currentImage >= ranger.length || currentImage >= ranger1.length )// when it reachs the end of the array, it goes back to 0
+      if (currentImage >= hearts.length)// when it reachs the end of the array, it goes back to 0
       {
-        currentImage = 0;
+        currentImage = 6;
       }
     }
   }

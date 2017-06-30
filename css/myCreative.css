@@ -11,7 +11,7 @@
   	margin-right: 20px;
   	margin-top: 0px;
   	border-radius: 10px;
-	border: #FFFFFF 2px solid;
+	  inner-boxborder: #FFFFFF 2px solid;
   	background:#000000;
 }
 
@@ -64,17 +64,9 @@ a:hover {
 
 .p5{
   padding: 0px;
-  position: absolute;
-}
-
-.download{
-  padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    /*margin-top: 50px;*/
-    width: 50px;
-    height: 50px;
-    background-color: white;
+  position: block;
+  max-width: 400px;
+  max-height: 20px;
 }
 
 footer {
@@ -84,7 +76,7 @@ footer {
 }
 
 #homeHeading{
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .headerTitle{
@@ -96,6 +88,15 @@ footer {
   font-size: 22px;
 }
 
+/*.download{
+  padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}*/
 /*.dropbtn {
     display: inline-block;
     color: transparent;
