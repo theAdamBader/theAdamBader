@@ -3,7 +3,7 @@
 var newCanvas;
 
 function setup() {
-	newCanvas = createCanvas(window.innerWidth/4.5, window.innerHeight/4);
+	newCanvas = createCanvas(32, 32;
 	newCanvas.parent('p5js');
 	// heart = new Sprites();
 	// heart.set();
