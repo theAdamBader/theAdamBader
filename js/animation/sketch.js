@@ -1,18 +1,17 @@
-// var heart; //creating an object to be called
-
-var newCanvas;
+var heart; //creating an object to be called
 
 function setup() {
-	newCanvas = createCanvas(32, 32;
+	var newCanvas = createCanvas(400, 40);
 	newCanvas.parent('p5js');
-	// heart = new Sprites();
-	// heart.set();
+
+	heart = new Sprites();
+	heart.set();
 	background(0);
 	noStroke();
 }
 
 function draw() {
-    // heart.run();
+    heart.run();
     fill(0, 10);
 	rect(0, 0, width, height); fill(random(255), random(255), random(255));
 	ellipse(random(width), random(height), 5, 5);

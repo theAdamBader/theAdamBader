@@ -4,8 +4,8 @@ var hearts = new Array(20);
 var context = canvas.getContext("2d");
 var currentImage = 0;
 var frameStartTime = 0;
-var x = 10;
-var y = 32;
+var x = 180;
+var y = 10;
 
 Sprites.prototype.set = function(){
 	for(var i = 0; i < hearts.length; i++){
