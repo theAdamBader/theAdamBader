@@ -64,7 +64,7 @@ a:hover {
 
 .p5{
   padding: 0px;
-  position: block;
+  position: fixed;
   max-width: 400px;
   max-height: 20px;
 }
