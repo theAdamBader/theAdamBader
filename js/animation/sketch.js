@@ -6,16 +6,16 @@ function setup() {
 
 	heart = new Sprites();
 	heart.set();
-	background(0);
-	noStroke();
+	// background(0);
+	// noStroke();
 }
 
 function draw() {
     heart.run();
-    fill(0, 10);
-	rect(0, 0, width, height); 
-	fill(random(255), random(255), random(255));
-	ellipse(random(width), random(height), 5, 5);
+ //    fill(0, 10);
+	// rect(0, 0, width, height); 
+	// fill(random(255), random(255), random(255));
+	// ellipse(random(width), random(height), 5, 5);
 }
 
 // window.onresize = function() {
