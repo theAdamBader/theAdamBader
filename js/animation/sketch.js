@@ -1,7 +1,7 @@
 var heart; //creating an object to be called
 
 function setup() {
-	var newCanvas = createCanvas(400, 40);
+	var newCanvas = createCanvas(40, 40);
 	newCanvas.parent('p5js');
 
 	heart = new Sprites();
