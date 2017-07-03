@@ -13,7 +13,8 @@ function setup() {
 function draw() {
     heart.run();
     fill(0, 10);
-	rect(0, 0, width, height); fill(random(255), random(255), random(255));
+	rect(0, 0, width, height); 
+	fill(random(255), random(255), random(255));
 	ellipse(random(width), random(height), 5, 5);
 }
 
