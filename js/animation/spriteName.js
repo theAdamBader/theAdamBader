@@ -4,7 +4,7 @@ var names = new Array(39);
 var context = canvas.getContext("2d");
 var currentImage = 0;
 var frameStartTime = 0;
-var x = 0;
+var x = 50;
 var y = 0;
 
 Sprite.prototype.set = function(){
