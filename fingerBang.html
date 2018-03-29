@@ -72,7 +72,10 @@
                         <a class="page-scroll" href="#gameplay">Gameplay</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contribution">Contribution</a>
+                        <a class="page-scroll" href="#sh">Software & Hardware</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#contributions">Contributions</a>
                     </li>
                 </ul>
             </div>
@@ -115,7 +118,7 @@
               <h1 id="gameplay">Gameplay</h1>
               <p>You are able to be in control, your fingers are your weapon. Using a leap motion to detect hand motion, you must use your fingers to shoot the enemies as fast as you can and do NOT let the enemies get you first. This is done by a combination of softwares: Unity, Processing & Wekinator. Using a Processing sketch which detects your hand motion, Unity which has the receivers to execute the code and Wekinator which communicates between both input and output.</p>
 
-            <h1 id="contribution">Contribution</h1>
+            <h1 id="sh">Hardware & Software</h1>
             <h3>Unity</h3>
             <p>It was used to create the game in which the player is faced in the certain fixed position and must shoot enemies appearing at random locations. There are scripts for the player, enemy, collision and a day/night cycle, which were written in C# also the OSC and UDP were written in C# however, the OSCReceiver is written in JavaScript as it can identify the signal better than in C# as in C# it would not convert and object into an integer. Even though it is in JavaScript, the file had to be modified as it could not grab certain variables from a C# script, the bullet script had to be written within the OSCReceiver script. All assest where designed by myself, Adam Bader.</p>
          
@@ -129,6 +132,15 @@
             <p>The algorithm that was used for this project was the k-nearest neighbour in which recognises the nearest neighbour on the position so if the “gun” position (class 1) was close the training set then it would go to class 1 and shoot, the reason for using this algorithm is because the leap motion can sometimes not recognise the hand position well enough so using that algorithm would be suitable as the aim is to make the user get as close as to the hand position as much as it possibly can.</p>
            
             <p>Even though, there are other learning algorithm to use in a classification but reason a kNN is best to use as it does not need much training sets for this game so therefore there would not be much noise and would not be slow to recognise which class the user is on. While as the AdaBoost is usually fast to train and can deal with irrelevant features it would not be useful for a game that does not require much training sets for it. </p>
+
+            <h3>Leap Motion</h3>
+            <p>Used a leap motion to have hand detection so that players can use their hands to shoot the enemies that enter the level; this would give an immersive feel that they are actually using their hands to fire at enemies rather than using VR or Kinect.</p>
+
+            <h1 id="contributions">Contribution</h1>
+            <h3>Asset & Code</h3>
+            <p>Enemy assest was created by myself using geometrical shapes and the level was done using Unity's terrian. The leap motion hand models were assets from the leap motion sdk.</p>
+
+            <p>Majority of the code for this project was written by myself; however, the OSC receiver was created by Rebecca Fiebrink, <a href="http://wekinator.org/">http://wekinator.org/</a> and modified by myself so that it works in the game I have created which there were no documentions on how to make a game, using Leap Motion, Unity and Wekinator so it is a good direction of being the first to create a game that works quite well.</p>
 
             <h3>Other Videos</h3>
             <p> Setup Video: <a href="https://youtu.be/JkhY9iZVCFI">https://youtu.be/JkhY9iZVCFI</a><br>
