@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--start of meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Adam Bader" content="">
+<!--end of meta -->
+
+    <title>Finger Bang</title>
+
+    <link rel="icon" href="./img/favicon.png">
+
+<!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/myCreative.css" rel="stylesheet">
+
+<!--list of scripts -->
+    <script src="p5.min.js" type = "text/javascript"></script>
+    <script src="addons/p5.dom.min.js" type = "text/javascript"></script>
+    <script src="addons/p5.sound.min.js" type = "text/javascript"></script>
+    <script src = "./js/animation/spriteName.js" type = "text/javascript"></script>
+    <script src="./js/animation/sketch.js" type = "text/javascript"></script>
+
+   
+
+<!--end of scripts -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Adam Bader</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Adam Bader</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#video">Video</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gameplay">Gameplay</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contribution">Contribution</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<!-- end of nav -->
+
+<!-- start of header -->
+    <header>
+
+         <div id="p5js"> </div>
+                   
+    </header>
+<!--end of header-->
+
+<h1 class="title" id="video">FINGER BANG</h1>
+<hr>
+<section class="no-padding">
+<div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col6 order2">
+            <div class="p-5">
+              <h2 class="display-2">SOLO PROJECT</h2>
+              <p class="display-p"> Unity (3D project)</p>
+
+            <div class="center-vid">
+             <iframe width="640" height="385" src="https://www.youtube.com/embed/Tz-j2rAMhJ0?rel=0" allowfullscreen></iframe>
+             </div>
+
+              <h1 id="overview">Game Overview </h1>
+              <h3>What is the game?</h3>
+                 <p> The game is set in the Unknown where you must shoot a waves of enemies coming towards you, if you do not kill them then they will kill you. Have you fingers ready because this will be a bang</p>
+
+            <h3>Why create this game?</h3>
+            <p>The project I decided to do was a game project for the leap motion using machine learning in which the player uses their fingers to shoot enemies and using voice commands to activate certain abilities such as freezing the enemies or healing the player. The intension for this is to see how the learning algorithm set for this would work and what algorithms could improve the features and training sets. </p>
+
+              <h1 id="gameplay">Gameplay</h1>
+              <p>You are able to be in control, your fingers are your weapon. Using a leap motion to detect hand motion, you must use your fingers to shoot the enemies as fast as you can and do NOT let the enemies get you first. This is done by a combination of softwares: Unity, Processing & Wekinator. Using a Processing sketch which detects your hand motion, Unity which has the receivers to execute the code and Wekinator which communicates between both input and output.</p>
+
+            <h1 id="contribution">Contribution</h1>
+            <h3>Unity</h3>
+            <p>It was used to create the game in which the player is faced in the certain fixed position and must shoot enemies appearing at random locations. There are scripts for the player, enemy, collision and a day/night cycle, which were written in C# also the OSC and UDP were written in C# however, the OSCReceiver is written in JavaScript as it can identify the signal better than in C# as in C# it would not convert and object into an integer. Even though it is in JavaScript, the file had to be modified as it could not grab certain variables from a C# script, the bullet script had to be written within the OSCReceiver script. All assest where designed by myself, Adam Bader.</p>
+         
+            <h3>Processing</h3>
+            <p>Leap Motion Sketch, which can be found in the Wekinator Examples. It was used for to send input positions for the game so for when the hand was at a “gun” position it would in act class 1 or if it were in a palm position it would call class 2 in Wekinator.</p>
+         
+            <h3>Wekinator</h3>
+            <p>Using this software, it picked up what I was sending using the Leap Motion Sketch and would send out those features to the receiver script and act on it. For this, I used a classification k-nearest neighbour.</p>
+
+            <h3>Algorithm</h3>
+            <p>The algorithm that was used for this project was the k-nearest neighbour in which recognises the nearest neighbour on the position so if the “gun” position (class 1) was close the training set then it would go to class 1 and shoot, the reason for using this algorithm is because the leap motion can sometimes not recognise the hand position well enough so using that algorithm would be suitable as the aim is to make the user get as close as to the hand position as much as it possibly can.</p>
+           
+            <p>Even though, there are other learning algorithm to use in a classification but reason a kNN is best to use as it does not need much training sets for this game so therefore there would not be much noise and would not be slow to recognise which class the user is on. While as the AdaBoost is usually fast to train and can deal with irrelevant features it would not be useful for a game that does not require much training sets for it. </p>
+
+            <h3>Other Videos</h3>
+            <p> Setup Video: <a href="https://youtu.be/JkhY9iZVCFI">https://youtu.be/JkhY9iZVCFI</a><br>
+            Before & After: <a href="https://youtu.be/JkYykW-oSHU">https://youtu.be/JkYykW-oSHU</a></p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!--End of About-->
+
+
+
+<!--Start-->
+<!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

@@ -36,7 +36,7 @@
 }
 
 a:link {
-    color: #00F8F0; 
+    color: #9e5e7d; 
     text-decoration: none;
 }
 
@@ -63,7 +63,11 @@ a:hover {
 }
 
 .p5{
-  padding: 0px;
+   
+    height: 399px;
+    bottom: 1px;
+    left: 1px;
+    position: relative;
 }
 
 footer {
@@ -83,6 +87,13 @@ footer {
 .paraTitle{
   font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Serif;
   font-size: 22px;
+}
+
+.imgCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /*.download{

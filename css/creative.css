@@ -11,10 +11,10 @@ body {
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Bodoni MT, Serif;
   -webkit-tap-highlight-color: #222222;
-  background-color: #000000;
+  background-color: #ebf5f4;
 }
 hr {
-  border-color: #0EFFE5;
+  border-color: #9e5e7d;
   border-width: 3px;
   max-width: 200px;
   position: relative;
@@ -30,22 +30,30 @@ hr.light {
 }
 a:hover,
 a:focus {
-  color: #129793;
+  color: #9e5e7d;
 }
-h1,
+
 h2,
 h3,
 h4,
-h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Serif;
-  color: white;
+  font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Sans-serif;
+  color: black;
 }
+
+h1{
+  font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Sans-serif;
+  color: black;
+}
+
+h5 { font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Sans-serif;
+  color: white;}
+
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: white;
+  color: black;
 }
 
 .text-faded {
@@ -76,12 +84,12 @@ aside {
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #129793;
+  color: #9e5e7d;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
   font-size: 12px;
-  color: #222222;
+  color: #9e5e7d;
   text-transform: uppercase;
 }
 .navbar-default .nav > li > a,
@@ -89,15 +97,15 @@ aside {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
-  color: #222222;
+  color: #9e5e7d;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #F05F40;
+  color: #9e5e7d;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+  color: #9e5e7d !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -129,12 +137,12 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #129793;
+    color: #9e5e7d;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #129793;
+    color: #9e5e7d;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -142,7 +150,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #129793;
+    color: #9e5e7d;
   }
 }
 
@@ -155,9 +163,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/header1.jpg');
-  text-align: center;
-  color: white;
+  background-image: url('../img/gif/rainbow.gif');
 }
 header .header-content {
   position: relative;
@@ -228,6 +234,15 @@ header .header-content .header-content-inner p {
   max-width: 650px;
   margin: 0 auto;
 }
+
+.portfolio-img {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  max-height: 650px;
+  margin: 0 auto;
+}
+
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
@@ -293,4 +308,151 @@ header .header-content .header-content-inner p {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+}
+
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+.rounded-right {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.rounded-left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.align-items-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.order1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+.order2 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .order3 {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .order4 {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+.col6{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 80px;
+  padding-left: 60px;
+}
+
+.display-2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.display-p {
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.display-ps {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.container1 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container1 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container1 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container1 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container1 {
+    max-width: 1140px;
+  }
+}
+
+.center-vid {
+    width: 640px; /* you have to have a size or this method doesn't work */
+    height: 385px; /* think about making these max-width instead - might give you some more responsiveness */
+
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto; /* make em equal */
 }

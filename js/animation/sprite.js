@@ -1,21 +1,21 @@
 function Sprites(){
 
-var hearts = new Array(20);
+var rainbows = new Array(40);
 var context = canvas.getContext("2d");
 var currentImage = 0;
 var frameStartTime = 0;
 var x = 0;
-var y = 10;
+var y = 0;
 
 Sprites.prototype.set = function(){
-	for(var i = 0; i < hearts.length; i++){
-	    hearts[i] = loadImage("./img/assets/sprite/heart"+i+".png");
+	for(var i = 0; i < rainbows.length; i++){
+	    rainbows[i] = loadImage("./img/assets/sprites/rainbow"+i+".png");
 	}
 }
 
 Sprites.prototype.display = function() {
     context.clearRect(x, y, displayWidth, displayHeight);
-    image(hearts[currentImage], x, y);
+    image(rainbows[currentImage], x, y);
   }
 
 Sprites.prototype.update = function() {
@@ -27,9 +27,9 @@ Sprites.prototype.update = function() {
     
       currentImage ++;//increments the image by one every frame
       
-      if (currentImage >= hearts.length)// when it reachs the end of the array, it goes back to 0
+      if (currentImage >= rainbows.length)// when it reachs the end of the array, it goes back to 0
       {
-        currentImage = 6;
+        currentImage = 39;
       }
     }
   }

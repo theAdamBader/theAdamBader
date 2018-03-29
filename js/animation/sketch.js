@@ -1,27 +1,19 @@
-var heart; //creating an object to be called
+var names; //creating an object to be called
+
 
 function setup() {
-	var newCanvas = createCanvas(40, 40);
+	var newCanvas = createCanvas(windowWidth, windowHeight);
 	newCanvas.parent('p5js');
 
-	heart = new Sprites();
-	heart.set();
-	// background(0);
-	// noStroke();
+	names = new Sprite();
+	names.set();
+
 }
 
 function draw() {
-    heart.run();
- //    fill(0, 10);
-	// rect(0, 0, width, height); 
-	// fill(random(255), random(255), random(255));
-	// ellipse(random(width), random(height), 5, 5);
+    names.run();
 }
 
-// window.onresize = function() {
-//   var w = window.innerWidth;
-//   var h = window.innerHeight;  
-//   newCanvas.size(w,h);
-//   width = w;
-//   height = h;
-// };
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
