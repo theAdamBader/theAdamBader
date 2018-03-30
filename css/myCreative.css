@@ -54,12 +54,8 @@ a:hover {
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
-    max-width: 450px;
-    height: 250px;
-    /*background-image: url('../img/innerbox1.jpg');*/
-    background-color: transparent;
-    border: #FFFFFF 2px solid;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .p5{

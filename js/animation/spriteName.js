@@ -1,6 +1,6 @@
 function Sprite(){
 
-var names = new Array(39);
+var names = new Array(57);
 var context = canvas.getContext("2d");
 var currentImage = 0;
 var frameStartTime = 0;
@@ -9,7 +9,7 @@ var y = 0;
 
 Sprite.prototype.set = function(){
 	for(var i = 0; i < names.length; i++){
-	    names[i] = loadImage("./img/assets/nameSprite/name"+i+".png");
+	    names[i] = loadImage("./img/assets/nameSprites/name"+i+".png");
 	}
 }
 
@@ -29,7 +29,7 @@ Sprite.prototype.update = function() {
       
       if (currentImage >= names.length)// when it reachs the end of the array, it goes back to 0
       {
-        currentImage = 38;
+        currentImage = 53;
       }
     }
   }
