@@ -1,6 +1,6 @@
 function Sprite(){
 
-var names = new Array(57);
+var names = new Array(58);
 var context = canvas.getContext("2d");
 var currentImage = 0;
 var frameStartTime = 0;
@@ -29,7 +29,7 @@ Sprite.prototype.update = function() {
       
       if (currentImage >= names.length)// when it reachs the end of the array, it goes back to 0
       {
-        currentImage = 54;
+        currentImage = 55;
       }
     }
   }
