@@ -29,7 +29,7 @@ Sprite.prototype.update = function() {
       
       if (currentImage >= names.length)// when it reachs the end of the array, it goes back to 0
       {
-        currentImage = 55;
+        currentImage = 54;
       }
     }
   }
