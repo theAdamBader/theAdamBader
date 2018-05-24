@@ -50,7 +50,8 @@ h5 { font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Sans-serif;
   color: white;}
 
 p {
-  font-size: 16px;
+  font-family: 'Helvetica', Serif;
+  font-size: 15px;
   line-height: 1.5;
   margin-bottom: 20px;
   color: black;
@@ -403,6 +404,7 @@ header .header-content .header-content-inner p {
 }
 
 .display-p {
+  font-family: 'Open Sans', 'Helvetica Neue', Bodoni MT, Sans-serif;
   font-size: 25px;
   font-weight: 100;
   line-height: 1.2;
@@ -410,9 +412,10 @@ header .header-content .header-content-inner p {
 }
 
 .display-ps {
+  font-family: 'Trebuchet MS', Serif;
   font-size: 20px;
   font-weight: 100;
-  line-height: 1.2;
+  line-height: 1.;
   text-align: center;
 }
 
