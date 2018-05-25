@@ -26,7 +26,7 @@
 <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
     <link href="css/myCreative.css" rel="stylesheet">
-    <link href="css/contactForm.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
 
 <!--list of scripts -->
     <script src="p5.min.js" type = "text/javascript"></script>
@@ -277,21 +277,35 @@
 
 <br>
 
-<div class="container">  
+    <h1 class="title" id="contact">LET'S GET IN TOUCH!</h1>
+                    <hr>
 
-  <form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>
-    <h3>Contact</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                   
+                    <p>Ready to start your next project together or just want to chat? Send an email to: <a href="mailto:adambader25@gmail.com"> adambader25@gmail.com</a></p>
+
+                   
+                </div>
+            </div>
+        </div>
+
+    <div class="container-form">  
+
+    <h1 class="title">LET'S GET IN TOUCH!</h1>
+    <hr>
     <h4>Contact us today, and get reply with in 24 hours!</h4>
     <fieldset>
-      <input placeholder="Full name" type="text" name="name" value="" tabindex="1" autofocus>
+      <input placeholder="Full Name" type="text" name="name" value="<?= $name ?>" tabindex="1" autofocus>
       <span class="error"><?= $name_error ?></span>
     </fieldset>
     <fieldset>
-      <input placeholder="Email Address" type="text" name="email" value="" tabindex="2">
+      <input placeholder="Your Email Address" type="text" name="email" value="<?= $email ?>" tabindex="2">
       <span class="error"><?= $email_error ?></span>
     </fieldset>
     <fieldset>
-      <input placeholder="Subject" type="text" name="phone" value="" tabindex="3">
+      <input placeholder="Your Phone Number" type="text" name="phone" value="<?= $phone ?>" tabindex="3">
       <span class="error"><?= $phone_error ?></span>
     </fieldset>
     <fieldset>
