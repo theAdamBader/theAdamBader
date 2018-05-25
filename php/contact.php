@@ -26,9 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
   
   if (empty($_POST["subject"])) {
-    $phone_error = "subject is required";
+    $subject_error = "subject is required";
   } else {
-    $phone = test_input($_POST["subject"]);
+    $subject = test_input($_POST["subject"]);
     
   }
 
