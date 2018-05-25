@@ -1,5 +1,0 @@
----
-forbidden:
-  - var_dump
-  - print_r
-  
