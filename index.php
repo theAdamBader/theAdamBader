@@ -26,7 +26,7 @@
 <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
     <link href="css/myCreative.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/contactForm.css" rel="stylesheet" type="text/css">
 
 <!--list of scripts -->
     <script src="p5.min.js" type = "text/javascript"></script>
@@ -277,19 +277,37 @@
 
 <br>
 
-    <h1 class="title" id="contact">LET'S GET IN TOUCH!</h1>
+<h1 class="title" id="contact">LET'S GET IN TOUCH!</h1>
                     <hr>
+<div id="form-main">
+  <div id="form-div">
+    <form class="form" action="contactForm.php" method="post">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                   
-                    <p>Ready to start your next project together or just want to chat? Send an email to: <a href="mailto:adambader25@gmail.com"> adambader25@gmail.com</a></p>
+      <p class="subject">
+        <input name="subject" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Subject" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <button type="submit" value="SEND" id="button-blue">SUBMIT</button> 
+       
+      </div>
+    </form>
+  </div>
+  </div>
 
-                   
-                </div>
-            </div>
-        </div>
  <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 

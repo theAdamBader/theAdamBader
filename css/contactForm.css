@@ -133,11 +133,8 @@ input:focus, textarea:focus {
 .submit:hover {
   color: #3498db;
 }
-  
-
 
 .submit:hover .ease{
   width:100%;
   background-color:white;
 }
-
