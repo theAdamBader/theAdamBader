@@ -1,2 +1,7 @@
-node_modules
-bower_components
+/vendor
+/composer.lock
+/build_test
+.php_cs.cache
+php_forbidden_function.yml
+/bin/
+/build/
