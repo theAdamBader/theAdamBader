@@ -69,16 +69,16 @@
                         <a class="page-scroll" href="#overview">Overview</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#gameplay">Gameplay</a>
+                        <a class="page-scroll" href="#design">Design</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contribution">Contribution</a>
+                        <a class="page-scroll" href="#implementation">Implementation</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- end of navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- end of container-fluid -->
     </nav>
 <!-- end of nav -->
 
@@ -90,7 +90,6 @@
     </header>
 <!--end of header-->
 
-
 <h1 class="title" id="video">FLY AWAY</h1>
 <hr>
 <section class="no-padding">
@@ -98,40 +97,84 @@
         <div class="row align-items-center">
           <div class="col6 order2">
             <div class="p-5">
-              <h2 class="display-2">SOLO PROJECT</h2>
-              <p class="display-p"> OpenFrameworks, Visual Studio</p>
+              <h2 class="display-2">SOLO/OPENFRAMEWORK PROJECT</h2>
+              <p class="display-p">C++</p>
 
             <div class="center-vid">
             <iframe width="640" height="385" src="https://www.youtube.com/embed/Xl6wIWYee2s?rel=0" allowfullscreen></iframe>
              </div>
 
-              <h1 id="overview">Game Overview </h1>
-              <h3>What is the game?</h3>
-                 <p> Fly Away depicts the story of a celestial void that that has to face their own demons. Stuck on an endless of enemies, it must fight and defeat their demons to find true tranqulity.</p>
+<!-- start of fly away -->
+
+<div class="wrapLeft">
+    <h1 id="overview" class="title">OVERVIEW</h1>
+        <hr>
+
+            <img src="./img/portfolio/flyAway/overview.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Main character is shooting enemies">
+
+    <div class="textCenter1">
+
+            <h3>What is the game?</h3>
+            
+            <p> Fly Away depicts the story of a celestial void that that has to face their own demons. Stuck on an endless of enemies, it must fight and defeat their demons to find true tranqulity.</p>
 
             <h3>Why create this game?</h3>
+            
             <p>Fly Away is a shoot 'em up game which you play as the void and have to face a wave of dark voids. Reason for creating this game is because having to face your own demons is a challenge and so facing and conquering your own demons is an achievement. Also, no one thought of making a game with a meaning behind it and I wanted to do something out of the norm.</p>
 
-              <h1 id="gameplay">Gameplay</h1>
-              <p>The gameplay is near at its core mechanics. There are at basics aspects of a where you can move and shoot your enemies also having a health and score system for each time you, the player, kill an enemy.</p>
+    </div>
+</div>
 
-            <h1 id="contribution">Contribution</h1>
-            <h3>Player, Enemies & Others</h3>
-            <p>Player and enemies were created using Adobe Illustrator so that it have smooth edges as Illustrator is useful for creating a vector images while Photoshop deals with pixels</p>
-         
-            <p>Adding bullets, health and entities were useful as with entities it made it easy to give the player and enemy class similar traits.</p>
-            
+
+<div class="wrapRight">
+    <h1 id="design" class="title">DESIGN</h1>
+        <hr>
+
+            <img src="./img/portfolio/flyAway/design.png" style="width:50%; height:50%;" class="imgWrapLeft" alt="Main character is shooting enemies">
+
+    <div class="textCenter1">
+
+            <h3>Character Design</h3>
+
+            <p>Player and enemies were created using Adobe Illustrator so that it have smooth edges as Illustrator. The reason as to why the player and enemey design is similar as the game conpect is boy must face his worse enemy, himself as our greatest enemy is us, I wanted to make a game about eliminating your inner demons</p>
+
+
+            <h3>Level Design</h3>
+
+            <p>There is no actual level design, this being as the game is meant to take place in the deepest place of the mind and fight your inner demons so for that I just stuck with giving it a black background.</p>
+
+    </div>
+</div>
+
+<div class="wrapLeft">
+    <h1 id="implementation" class="title">IMPLEMENTATION</h1>
+        <hr>
+
+            <img src="./img/portfolio/flyAway/code.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Code of an abstract class">
+
+    <div class="textCenter1">
+
+            <h3>Gameplay</h3>
+
+            <p>The gameplay is near at its core mechanics. There are at basics aspects of a where you can move and shoot your enemies also having a health and score system for each time you, the player, kills an enemy.</p>
+
+            <h3>Code</h3>
+
+            <p>For the code, I created an entity script which allowed the player and enemy class to grab the variables from that script and make certain changes so that they have different traits and then created an abstract class, inGameObjects.h, for health, score and collision.</p>
+
+    </div>
+</div>
+ 
+<!-- end of fly away-->
+
             </div>
           </div>
         </div>
       </div>
     </section>
     
-<!--End of About-->
+<!-- start of jQuery-->
 
-
-<!--Start-->
-<!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -144,6 +187,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+<!-- end of jQuery-->
 
 </body>
 

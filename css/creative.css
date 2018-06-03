@@ -8,21 +8,25 @@ body {
   height: 100%;
   width: 100%;
 }
+
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Bodoni MT, Serif;
   -webkit-tap-highlight-color: #222222;
   background-color: #ebf5f4;
 }
+
 hr {
   border-color: #9e5e7d;
   border-width: 3px;
   max-width: 200px;
   position: relative;
 }
+
 hr.light {
   border-color: white;
+}
 
-}a {
+a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -55,6 +59,7 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
   color: black;
+  display: block;
 }
 
 .text-faded {

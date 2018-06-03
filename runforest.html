@@ -69,10 +69,10 @@
                         <a class="page-scroll" href="#overview">Overview</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#gameplay">Gameplay</a>
+                        <a class="page-scroll" href="#design">Design</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contribution">Contribution</a>
+                        <a class="page-scroll" href="#implementation">Implementation</a>
                     </li>
                 </ul>
             </div>
@@ -98,42 +98,84 @@
         <div class="row align-items-center">
           <div class="col6 order2">
             <div class="p-5">
-              <h2 class="display-2">SOLO PROJECT</h2>
-              <p class="display-p"> Processing (Java)</p>
+              <h2 class="display-2">SOLO/PROCESSING PROJECT</h2>
+              <p class="display-p">Java</p>
 
             <div class="center-vid">
              <iframe width="640" height="385" src="https://www.youtube.com/embed/X4H7zH5M7oM?rel=0" allowfullscreen></iframe>
              </div>
 
-              <h1 id="overview">Game Overview </h1>
-              <h3>What is the game?</h3>
-                 <p> Run Forest Run is a scrolling game in which you play as Forest Grump, a tree that is running from a forest fire. The objective is see how far you can get before the fire spirites get you. Can you help forest runs as fast as you can or will the fire get you and it's game over.</p>
+<!-- start of run forest run -->    
+        
+<div class="wrapLeft">
+    <h1 id="overview" class="title">OVERVIEW</h1>
+        <hr>
+
+            <img src="./img/portfolio/runForestRun/run.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Forest is running">
+
+<div class="textCenter">
+
+            <h3>What is the game?</h3>
+            
+            <p> Run Forest Run is a scrolling game in which you play as Forest Grump, a tree that is running from a forest fire. The objective is see how far you can get before the fire spirites get you. Can you help Forest run as fast as you can or will the fire get him and itis over.</p>
 
             <h3>Why create this game?</h3>
-            <p>The reason to why I took a different direction is because unlike other scrolling games where you see how fast you can get, I also used the movie reference Forrest Gump to create is sweet and playful game; however there is a subliminal message to it too that no matter how far you run, the fire will catch up and burn the forest. Not only did I take the quote "Run Forrest Run" and turned it into a game about you running from a forest fire but it is also to make the player aware about forest fires and no matter how far that poor tree ran, the fire would eventually get poor Forest Grump.</p>
 
-              <h1 id="gameplay">Gameplay</h1>
-              <p>You are able to control one character which is the main character, as the main character you are able to walk, jump, and avoid enemies heading towards you and the forest fire behind you, there are four types of enemies, small fire ball, and large fire ball which comes at a slow pace, a blue fire from a above, incase you jump high and a small green fire that heads towards you very fast. The score is tallied by how far you can reach the point and keeps a highscore to encourage others to best the last person's highscore.</p>
+            <p>The reason to why I took a different direction is because unlike other scrolling games where you see how fast you can get, I also used the movie reference Forrest Gump to create a sweet and playful game; however there is a subliminal message to it too that no matter how far you run, the fire will catch up and burn the forest. No matter how far that poor tree runs, the fire would eventually get poor Forest Grump.</p>
 
-            <h1 id="contribution">Contributions</h1>
-            <h3>Player, Enemies, Stage & Audio</h3>
-            <p>I drew the player using Adobe Illustrator as the game had a more finer detail so ensured I used Vectors for this game rather than pixels</p>
-         
-            <p>The enemies were also created using Adobe Illustrator with a more simplist design as they could be resized, change of colour and used again but with a different behaviour from each other</p>
+    </div>
+</div>
+
+<div class="wrapRight">
+    <h1 id="design" class="title">DESIGN</h1>
+        <hr>
+
+            <img src="./img/portfolio/runForestRun/design.png" style="width:50%; height:50%;" class="imgWrapLeft" alt="Character and level design">
+
+        <div class="textCenter">
+
+            <h3>Character Design</h3>
+
+            <p>The characters were design using Adobe Illustrator as it Illustrator deals with vectors and not pixels. The main character, was drawn as a sprite sheet with different facial reactions and movement; as for the enemies they had a simple design as it was simple to resize and change their colour value; although the design was simple, giving certain feature allowed the players to know which enemy was dangerous and which were hard to avoid.</p>
+
+            <h3>Level Design</h3>
+
+            <p>The level design itself, as seen in the picture, shows that when the art ends as it matches the beginning of the artwork ensuring that when it loops it does not break the immersion and also added a few branches to make it seem like the player is running within the forest itself.</p>
+
+            <h3>Audio</h3>
          
             <p>The level was a simple a design which looped each time making it look like it is a stretch canvas and for the audio I used <a href="freesound.org">freesound.org</a> to download the tracks and use it on the game</p>
-            
+
+    </div>
+</div>
+
+<div class="wrapLeft">
+    <h1 id="implementation" class="title">IMPLEMENTATION</h1>
+        <hr>
+
+            <img src="./img/portfolio/runForestRun/code.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Code for the main character">
+
+        <div class="textCenter">
+
+            <h3>Gameplay</h3>
+
+            <p>You are able to control one character which is the main character, as the main character you are able to walk, jump, and avoid enemies heading towards you and the forest fire behind you, there are four types of enemies, small fire ball, and large fire ball which comes at a slow pace, a blue fire from a above, incase you jump high and a small green fire that heads towards you very fast. The score is tallied by how far you can reach the point and keeps a highscore to encourage others to best the last person's highscore.</p>
+
+            <h3>Code</h3>
+
+            <p>The code implemented for this project is a background loop, so ensuring the background loops well without breaking the immersion. The other code is other enemies and their sprites, however in collision the enemies are summoned depending for far you reach and the animation for Forest is randomised as I wanted it to have a varies reactions as the player moves and jump.</p>
+    </div>
+</div>
+     
+<!-- end of run forest run-->
+
             </div>
           </div>
         </div>
       </div>
     </section>
     
-<!--End of About-->
-
-
-<!--Start-->
-<!-- jQuery -->
+<!-- start of jQuery-->
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -146,6 +188,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+<!-- end of jQuery-->
 
 </body>
 
