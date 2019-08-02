@@ -1,0 +1,53 @@
+/* #container {
+	margin: 0 auto;
+	width: 1200px;
+    height: 700px;
+    position: absolute;
+	overflow: hidden;
+}
+
+.nav-linkz{
+	text-decoration: none;
+    color: #000000;
+}
+
+.nav-project{
+	margin: 100px 0 0 50px;
+	font-family: 'Arial', sans-serif;
+	font-size: 50px;
+	animation-name: project;
+	animation-duration: 5.4s;
+}
+
+@keyframes project{
+	from{ transform: translateX(500px); opacity: 0; }
+	to{transform: translateX(0); opacity: 1;}
+}
+
+.nav-artwork{
+	margin: 100px 0 0 850px;
+	font-family: 'Arial', sans-serif;
+	font-size: 50px;
+	animation-name: artwork;
+	animation-duration: .6s;
+}
+
+@keyframes artwork{
+	from{ transform: translateX(1500px); opacity: 0; }
+	to{transform: translateX(0); opacity: 1;}
+}
+
+.nav-contacts{
+	margin: 200px 0 0 20px;
+	font-family: 'Arial', sans-serif;
+	font-size: 50px;
+	animation-name: contacts;
+	animation-duration: 9.6s;
+}
+
+@keyframes contacts{
+	from{ transform: translateX(800px); opacity: 0; }
+	to{transform: translateX(0); opacity: 1;}
+} */
+
+/*# sourceMappingURL=/nav_style.59ed3fa6.css.map */

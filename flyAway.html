@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <!--start of meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,184 +13,82 @@
 
     <title>Fly Away</title>
 
-    <link rel="icon" href="./img/favicon.png">
-
-<!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-<!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-<!-- Theme CSS -->
-    <link href="css/creative.css" rel="stylesheet">
-    <link href="css/myCreative.css" rel="stylesheet">
-
-<!--list of scripts -->
-    <script src="p5.min.js" type = "text/javascript"></script>
-    <script src = "./js/animation/spriteName.js" type = "text/javascript"></script>
-    <script src="./js/animation/sketch.js" type = "text/javascript"></script>
-
-   
-
-<!--end of scripts -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- start of css -->
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic" rel="stylesheet">
+<!-- end of online css -->
+	<link href="./css/my_style.scss" rel="stylesheet">
+<!-- end of css -->
 
 </head>
 
-<body id="page-top">
-
-   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Adam Bader</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Adam Bader</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="index.html">Home</a>
-                    </li>
-                     <li>
-                        <a class="page-scroll" href="#video">Video</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#overview">Overview</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#design">Design</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#implementation">Implementation</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- end of navbar-collapse -->
-        </div>
-        <!-- end of container-fluid -->
-    </nav>
+<body>
+	<main data-router-wrapper>
+		<section data-router-view="projects" class="projects">
+            <div class="project-scroll-container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./projects.html" class="close"></a>
+                        </li>
+                    </ul>
+                </nav>
 <!-- end of nav -->
 
-<!-- start of header -->
-    <header>
+                <h1 class="headline-font">FLY AWAY</h1>
+        
+                <div class="overlay">
+                    <img src="./img/project_backgrounds/ComputerMonitor1.png" alt="">
+                    <iframe width="640" height="385" src="https://www.youtube.com/embed/zyiZwAK5vvU?rel=0&amp" allowfullscreen></iframe>
+                </div> 
+                
+                <div class="git-img">
+                    <a href="https://github.com/theAdamBader/FlyAway" target="_blank">
+                    <img src="./img/project_backgrounds/gitSoure.png" alt="Link to Fly Away Soure Code">
+                    </a>
+                </div>
 
-         <div id="p5js"> </div>
-                   
-    </header>
-<!--end of header-->
+                <div class="text-container">
+                    <div class="para-container">
+                        <h1 class="title-font">OVERVIEW</h1>
+                    
+                        <p class="para-font">
+                            Fly Away (solo project) is a 2D shoot ‘em game where you enter 
+                            the battle, fighting a swarm of enemies that represents our inner thought and doubts 
+                            in which you (the player) have to shoot them to clear the way of your conscious. 
+                            This project was created using openFrameworks (Visual Studio) and C++. 
+                        </p>
+                    
+                        <h1 class="title-font">DESIGN & IMPLIMENTATION</h1>
+                        
+                        <h2 class="subtitle-font">DESIGN</h2>
+                        <p class="para-font">
+                            The design of the character was created using Adobe Illustrator as it dealt 
+                            with vectors rather than pixels and created a static image of the character 
+                            and enemy, which the enemy is a horizontal flipped with a different colour and 
+                            corrupted wings which represents the corruption that enters one’s cognitive. 
+                        </p>
 
-<h1 class="title" id="video">FLY AWAY</h1>
-<hr>
-<section class="no-padding">
-<div class="container">
-        <div class="row align-items-center">
-          <div class="col6 order2">
-            <div class="p-5">
-              <h2 class="display-2">SOLO/OPENFRAMEWORK PROJECT</h2>
-              <p class="display-p">C++</p>
-
-            <div class="center-vid">
-            <iframe width="640" height="385" src="https://www.youtube.com/embed/Xl6wIWYee2s?rel=0" allowfullscreen></iframe>
-             </div>
-
-<!-- start of fly away -->
-
-<div class="wrapLeft">
-    <h1 id="overview" class="title">OVERVIEW</h1>
-        <hr>
-
-            <img src="./img/portfolio/flyAway/overview.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Main character is shooting enemies">
-
-    <div class="textCenter1">
-
-            <h3>What is the game?</h3>
-            
-            <p> Fly Away depicts the story of a celestial void that that has to face their own demons. Stuck on an endless of enemies, it must fight and defeat their demons to find true tranqulity.</p>
-
-            <h3>Why create this game?</h3>
-            
-            <p>Fly Away is a shoot 'em up game which you play as the void and have to face a wave of dark voids. Reason for creating this game is because having to face your own demons is a challenge and so facing and conquering your own demons is an achievement. Also, no one thought of making a game with a meaning behind it and I wanted to do something out of the norm.</p>
-
-            <p>Feel free to view the source code for this project below:</p>
-            <a href="https://github.com/theAdamBader/flyAway" target="_blank"><img src="./img/icons/gitHub.png" alt="GitHub"></a>
-
-    </div>
-</div>
-
-
-<div class="wrapRight">
-    <h1 id="design" class="title">DESIGN</h1>
-        <hr>
-
-            <img src="./img/portfolio/flyAway/design.png" style="width:50%; height:50%;" class="imgWrapLeft" alt="Main character is shooting enemies">
-
-    <div class="textCenter1">
-
-            <h3>Character Design</h3>
-
-            <p>Player and enemies were created using Adobe Illustrator so that it have smooth edges as Illustrator. The reason as to why the player and enemey design is similar as the game conpect is boy must face his worse enemy, himself as our greatest enemy is us, I wanted to make a game about eliminating your inner demons</p>
-
-
-            <h3>Level Design</h3>
-
-            <p>There is no actual level design, this being as the game is meant to take place in the deepest place of the mind and fight your inner demons so for that I just stuck with giving it a black background.</p>
-
-    </div>
-</div>
-
-<div class="wrapLeft">
-    <h1 id="implementation" class="title">IMPLEMENTATION</h1>
-        <hr>
-
-            <img src="./img/portfolio/flyAway/code.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Code of an abstract class">
-
-    <div class="textCenter1">
-
-            <h3>Gameplay</h3>
-
-            <p>The gameplay is near at its core mechanics. There are at basics aspects of a where you can move and shoot your enemies also having a health and score system for each time you, the player, kills an enemy.</p>
-
-            <h3>Code</h3>
-
-            <p>For the code, I created an entity script which allowed the player and enemy class to grab the variables from that script and make certain changes so that they have different traits and then created an abstract class, inGameObjects.h, for health, score and collision.</p>
-
-    </div>
-</div>
- 
-<!-- end of fly away-->
-
+                        <h2 class="subtitle-font">IMPLIMENTATION</h2>
+                        <p class="para-font">
+                                The implementation of the game is near to its core mechanics. There are 
+                                the basics aspects of it, which are the character’s movement, collision, 
+                                health and a firing system. These are inherited from an entity script which 
+                                allows other cpp files to inherit its property then manipulate its variable depending 
+                                on what trait each class should inherit from its parent and the entity script 
+                                inherits its variables from an abstract class (inGameObjects.h). 
+                        </p>	
+                    </div>	
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-<!-- start of jQuery-->
+		</section>
+	</main>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
+<!-- end of run forest run -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.js"></script>
-
-<!-- end of jQuery-->
+<!-- start of jQuery -->
+<script src= "./js/transitions.js"></script>
+<!-- end of jQuery -->
 
 </body>
 
