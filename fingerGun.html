@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <!--start of meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,90 +12,237 @@
 
     <title>Finger Gun</title>
 
-<!-- start of css -->
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic" rel="stylesheet">
-<!-- end of online css -->
-	<link href="./css/my_style.scss" rel="stylesheet">
-<!-- end of css -->
+    <link rel="icon" href="./img/favicon.png">
+
+<!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/myCreative.css" rel="stylesheet">
+
+<!--list of scripts -->
+    <script src="p5.min.js" type = "text/javascript"></script>
+    <script src = "./js/animation/spriteName.js" type = "text/javascript"></script>
+    <script src="./js/animation/sketch.js" type = "text/javascript"></script>
+
+   
+
+<!--end of scripts -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body>
-	<main data-router-wrapper>
-		<section data-router-view="projects" class="projects">
-            <div class="project-scroll-container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./projects.html" class="close"></a>
-                        </li>
-                    </ul>
-                </nav>
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Adam Bader</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Adam Bader</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#video">Video</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#software">Software</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hardware">Hardware</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#design">Design</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#implementation">Implementation</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end of navbar-collapse -->
+        </div>
+        <!-- end of container-fluid -->
+    </nav>
 <!-- end of nav -->
 
-                <h1 class="headline-font">FINGER GUN</h1>
-        
-                <div class="overlay">
-                    <img src="./img/project_backgrounds/ComputerMonitor1.png" alt="">
-                    <iframe width="640" height="385" src="https://www.youtube.com/embed/AcHfdyaP2CY" allowfullscreen></iframe>
-                </div> 
-                
-                <div class="git-img">
-                    <a href="https://github.com/theAdamBader/FlyAway" target="_blank">
-                    <img src="./img/project_backgrounds/gitSoure.png" alt="Link to Fly Away Soure Code">
-                    </a>
-                </div>
+<!-- start of header -->
+    <header>
 
-                <div class="text-container">
-                    <div class="para-container">
-                        <h1 class="title-font">OVERVIEW</h1>
-                    
-                        <p class="para-font">
-                            Finger gun (solo project) is a machine learning game in which the player 
-                            uses their hands to aim at the enemies that are approaching the player. 
-                            The game uses three different software: Unity, Processing and Wekinator. 
-                            Wekinator communicates with Processing that handles the features of a hand 
-                            skeleton (input) and Unity which handles the game (output) and grabs the 
-                            hand mechanic features from Processing. The languages that this project 
-                            uses were Java, JavaScript and C#.
-                        </p>
-                    
-                        <h1 class="title-font">DESIGN & IMPLIMENTATION</h1>
-                        
-                        <h2 class="subtitle-font">DESIGN</h2>
-                        <p class="para-font">
-                            The design for this project was done via Unity's objects. The enemy was created 
-                            using 5 sphere objects, one for the body, one as the ring, one for the eyeball 
-                            and two for the eye shape; the textures for the game done on Photoshop and 
-                            exported as a png to the 'Texture' file. The leap motion hand models were 
-                            assets taken from the leap motion sdk. 
-                            <br>
-                            The level design was created using Unity’s terrain tool that allows the user 
-                            to create quick and simple assets such as mountains, trees and more. Created 
-                            mountains and painted which grabs textures that were simply implemented from Photoshop.
-                        </p>
+         <div id="p5js"> </div>
+                   
+    </header>
+<!--end of header-->
 
-                        <h2 class="subtitle-font">IMPLIMENTATION</h2>
-                        <p class="para-font">
-                            The implementation for the project had a varies software and hardware that 
-                            were used to create this project. The hardware needed for it was a leap motion 
-                            to detect hand gestures; as for the software needed they were, Wekinator which 
-                            records the features from Processing that the user sets (using the kNN algorithm), 
-                            then runs the features to Unity, this works by having a oscillator that can 
-                            communicate with the software that have the same signal. 
-                        </p>	
-                    </div>	
-                </div>
+<h1 class="title" id="video">FINGER GUN</h1>
+<hr>
+<section class="no-padding">
+<div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col6 order2">
+            <div class="p-5">
+              <h2 class="display-2">SOLO/UNITY PROJECT</h2>
+              <p class="display-p">3D project</p>
+
+            <div class="center-vid">
+             <iframe width="640" height="360" src="https://www.youtube.com/embed/AcHfdyaP2CY" allowfullscreen></iframe>
             </div>
-		</section>
-	</main>
 
-<!-- end of run forest run -->
+<!-- start of finger gun --> 
 
-<!-- start of jQuery -->
-<script src= "./js/transitions.js"></script>
-<!-- end of jQuery -->
+<div class="wrapLeft">
+    <h1 id="overview" class="title">OVERVIEW</h1>
+        <hr>
+
+        <img src="./img/portfolio/fingerGun/overview.jpg" style="width:50%; height:50%;" class="imgWrapRight" alt="Main level">
+
+        <h3>What is the game?</h3>
+        
+        <p> The game is set in the Unknown where you must shoot a waves of enemies coming towards you, if you do not kill them then they will kill you. Have you fingers ready because this will be a bang.</p>
+
+        <p>The game was created using Wekinator, a training set, and a learning algorithm (k nearest neighbour) to program a game, using Unity, and a leap motion for controls.</p>
+
+        <h3>Why create this game?</h3>
+            
+        <p>The project I decided to do was a game project for the leap motion using machine learning in which the player uses their fingers to shoot enemies and using voice commands to activate certain abilities such as freezing the enemies or healing the player. The intension for this is to see how the learning algorithm set for this would work and what algorithms could improve the features and training sets. </p>
+
+        <p>Feel free to view the source code for this project below:</p>
+        <a href="https://github.com/theAdamBader/machineLearningProject" target="_blank"><img src="./img/icons/gitHub.png" alt="GitHub"></a>
+
+</div>
+
+<div class="wrapRight">
+    <h1 id="software" class="title">SOFTWARE</h1>
+        <hr>
+
+        <img src="./img/portfolio/fingerGun/software.png" style="width:45%; height:40%;" class="imgWrapLeft" alt="design of level, running the processing sketch and set up for wekinator">
+
+        <div class="textCenter1">
+
+            <h3>Unity</h3>
+
+            <p>The engine used for this project is Unity as it handles, C# and JavaScript scripts as the OSC Reciever is written in JavaScript and using Unity's inbuilt tools makes in effective for the project's purpose.</p>
+         
+            <h3>Processing</h3>
+
+            <p>Processing deals with Java and using processing, created a sketch that handles 15 inputs which handles the 15 inputs of each hand and had an OSC sender that send the inputs into Wekinator.</p>
+         
+            <h3>Wekinator</h3>
+
+            <p>Using Wekinator, it was able to interact between the Processing and Unity. Allowing it to learn the hand gesture it was trained and implements itself onto the game's control, allowing it to know what hand gestures call what action. For the training sets I used classification's k-nearest neighbour algorithm.</p>
+
+    </div>
+</div>
+
+<div class="wrapLeft">
+    <h1 id="hardware" class="title">HARDWARE</h1>
+        <hr>
+
+        <img src="./img/portfolio/fingerGun/leap.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Main level">
+
+    <div class="textCenter1">
+
+            <h3>Leap Motion</h3>
+        
+            <p>Used a leap motion to have hand detection so that players can use their hands to shoot the enemies that enter the level; this would give an immersive feel that they are actually using their hands to fire at enemies rather than using VR or Kinect.</p>
+
+            <p></p>
+
+    </div>
+</div>
+
+<div class="wrapRight">
+    <h1 id="design" class="title">DESIGN</h1>
+        <hr>
+
+        <img src="./img/portfolio/fingerGun/design.jpg" style="width:50%; height:50%;" class="imgWrapLeft" alt="Player's hand and enemy being on its face">
+
+    <div class="textCenter">
+
+            <h3>Character Design</h3>
+
+            <p>The design for this project was done via Unity's objects.  The enemy was created using 5 shphere objects, one for the body, one as the ring, one for the eyeball and two for the eye shape; the textures for the game done on Photoshop and exported as a .png to the 'Texture' file. The leap motion hand models were assets taken from the leap motion sdk.</p>
+
+            <h3>Level Design</h3>
+            
+            <p>Using the terrian, I was able to cerate the terrian and the mountains was created by Unity's inbuilt terrian tools which then using their tools, I grabbed two textures, created on Photoshop and using the paint tool, painted the terrian.</p>
+
+    </div>
+</div>
+
+<div class="wrapLeft">
+    <h1 id="implementation" class="title">IMPLEMENTATION</h1>
+        <hr>
+
+        <img src="./img/portfolio/fingerGun/code.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Main level">
+
+            <h3>Gameplay</h3>
+        
+            <p>You are able to be in control, your fingers are your weapon. Using a leap motion to detect hand motion, you must use your fingers to shoot the enemies as fast as you can and do NOT let the enemies get you first. This is done by a combination of softwares: Unity, Processing and Wekinator. Using a Processing sketch which detects your hand motion, Unity which has the receivers to execute the code and Wekinator which communicates between both input and output.</p>
+
+            <h3>Code</h3>
+
+            <p>The scripts for the player, enemy, collision and a day/night cycle, which were written in C# also the OSC and UDP were written in C# however, the OSCReceiver is written in JavaScript as it can identify the OSCSender signal better than in C#</p>
+
+            <p>Majority of the code for this project was written by myself; however, the OSC receiver was sample from Rebecca Fiebrink, <a href="http://wekinator.org/">http://wekinator.org/</a> and modified by myself so that it works in the game I have created which there were no documentions on how to make a game, using Leap Motion, Unity and Wekinator so it is a good direction of being the first to create a game that works quite well.</p>
+
+            <h3>Algorithm</h3>
+       
+            <p>The algorithm that was used for this project was the k-nearest neighbour in which recognises the nearest neighbour on the position so if the “gun” position (class 1) was close the training set then it would go to class 1 and shoot.</p>
+
+</div>
+
+<h3>Other Videos</h3>
+<p> Setup Video: <a href="https://youtu.be/JkhY9iZVCFI">https://youtu.be/JkhY9iZVCFI</a><br>
+Before & After: <a href="https://youtu.be/JkYykW-oSHU">https://youtu.be/JkYykW-oSHU</a></p>
+
+<!-- end of finger gun -->
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!--End of About-->
+
+
+
+<!--Start-->
+<!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
 </body>
 

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <!--start of meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,99 +12,228 @@
 
     <title>La Vie est Belle</title>
 
-<!-- start of css -->
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap&subset=arabic" rel="stylesheet">
-<!-- end of online css -->
-	<link href="./css/my_style.scss" rel="stylesheet">
-<!-- end of css -->
+    <link rel="icon" href="./img/favicon.png">
+
+<!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/myCreative.css" rel="stylesheet">
+
+<!--list of scripts -->
+    <script src="p5.min.js" type = "text/javascript"></script>
+    <script src = "./js/animation/spriteName.js" type = "text/javascript"></script>
+    <script src="./js/animation/sketch.js" type = "text/javascript"></script>
+
+
+<!--end of scripts -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body>
-	<main data-router-wrapper>
-		<section data-router-view="projects" class="projects">
-            <div class="project-scroll-container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./projects.html" class="close"></a>
-                        </li>
-                    </ul>
-                </nav>
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Adam Bader</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Adam Bader</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#video">Video</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#overview">Overview</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#software">Software</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hardware">Hardware</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#design">Design</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#implementation">Implementation</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end of navbar-collapse -->
+        </div>
+        <!-- end of container-fluid -->
+    </nav>
 <!-- end of nav -->
 
-                <h1 class="headline-font">La Vie est Belle</h1>
-        
-                <div class="overlay-phone">
-                    <img src="./img/project_backgrounds/phone.png" alt="">
-                    <iframe width="640" height="385" src="https://www.youtube.com/embed/TsCBVn8ZDws" allowfullscreen></iframe>
-                </div> 
-                
-                <div class="git-img-phone">
-                    <a href="https://github.com/theAdamBader/finalVRProject" target="_blank">
-                    <img src="./img/project_backgrounds/gitSoure.png" alt="Link to Fly Away Soure Code">
-                    </a>
-                </div>
+<!-- start of header -->
+    <header>
 
-                <div class="text-container">
-                    <div class="para-container">
-                        <h1 class="title-font">OVERVIEW</h1>
-                    
-                        <p class="para-font">
-                            La Vie est Belle (solo project) is a mobile virtual reality therapy (VRT) 
-                            game where the player must enter the cottage by completing two puzzles set 
-                            in a different dimension which the player can access through by a teleport. 
-                            The game features two out of the three illusions, the first is a place illusion 
-                            (PI) so that it could track the player’s head tracking, giving them 6 degrees of 
-                            freedom and the second is a plausible (Psi) illusion which transports the into a 
-                            place that they can be immersed in. <br>
-                            The game requires an Android phone, Samsung Gear VR and a Gear VR controller in as 
-                            it is an immersive game. The reason La Vie est Belle was my final year project is 
-                            because there are not many VRT games that tackle anxiety and depression and so the 
-                            participants that were involved, while they were random, they were also selective as 
-                            the needed to play the game a couple of times to ensure that the game did make them feel 
-                            an ease during and after the game as some suffered from stress, anxiety and other disabilities.  
-                        </p>
-                    
-                        <h1 class="title-font">DESIGN & IMPLIMENTATION</h1>
-                        
-                        <h2 class="subtitle-font">DESIGN</h2>
-                        <p class="para-font">
-                            The game design involved using MDA, so had to focus on the mechanics of the game and its interaction 
-                            with the objects and then the dynamics of what each input (Gear VR controller) would do as the player 
-                            pressed the button. After focusing on how the mechanics and dynamics would formulate, then the next focus was 
-                            the aesthetics of the game, which a low poly asset would be interesting as the aim is to transport the player 
-                            into a fantasy and immersive world.  <br>
-                            The level design as mentioned is a low poly game that allows the player to explore and interact with the objects. 
-                            The assets were created using Blender as the project needed its own assets to go with the game’s aesthetics 
-                            and, the textures for the objects where created from Adobe Photoshop as the colour scheme for the game’s 
-                            environment needed to give a vibrant and calming atmosphere. 
-                        </p>
+         <div id="p5js"> </div>
+                   
+    </header>
+<!--end of header-->
 
-                        <h2 class="subtitle-font">IMPLIMENTATION</h2>
-                        <p class="para-font">
-                            The implementation involving this project included OVR SDK package with changes to the input script so that 
-                            it matches the Gear VR controller’s inputs as well as adding a raycaster to aim at the objects, depending on the 
-                            distance.  For movement implementing a Virtual Navigation works better than other navigation types as 
-                            it would allow players to explore the field. <br>
-                            In Unity, a shader script was implemented to the teleporters to give the aesthetics of looking through 
-                            the other side and so the material would move depending on the distance and rotation of the player 
-                            before entering the level. To ensure that the player could not get through the back of the teleport, a 
-                            Euler function was added as it would allow the player only to enter from the front and not the back of 
-                            the teleporter.
-                        </p>	
-                    </div>	
-                </div>
+<h1 class="title" id="video">LA VIE EST BELLE</h1>
+<hr>
+<section class="no-padding">
+<div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col6 order2">
+            <div class="p-5">
+              <h2 class="display-2">SOLO/UNITY PROJECT</h2>
+              <p class="display-p">3D project</p>
+
+            <div class="center-vid">
+             <iframe width="640" height="385" src="https://www.youtube.com/embed/TsCBVn8ZDws?rel=0" allowfullscreen></iframe>
             </div>
-		</section>
-	</main>
 
-<!-- end of run forest run -->
+<!-- start of la vie est belle -->  
 
-<!-- start of jQuery -->
-<script src= "./js/transitions.js"></script>
-<!-- end of jQuery -->
+<div class="wrapLeft">
+    <h1 id="overview" class="title">OVERVIEW</h1>
+        <hr>
+
+            <img src="./img/portfolio/LVB/indoors.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Image of inside the house">
+
+            <h3>What is the game about?</h3>
+              
+            <p> It is a mobile Virtual Reality Therapy (VRT) game that would help stimulate and reduce stress and anxiety levels and depression. Creating a VR puzzle game that would have a plausibility and a place illusion implemented that would able to allow the player be transported into a virtual world that is not like the real world.</p>
+            
+
+            <h3>Why create this game?</h3>
+            <p>There are not many VRT games on mobile that helps to destress or reduce anxiety and depression. So, being able to create a plausible game would be the achievement.</p>
+
+            <p>Feel free to view the source code for this project below:</p>
+            <a href="https://github.com/theAdamBader/finalVRProject" target="_blank"><img src="./img/icons/gitHub.png" alt="GitHub"></a>
+                       
+
+</div>
+
+<br>  
+
+<div class="wrapRight">
+
+    <h1 id="software" class="title">SOFTWARE</h1>
+        <hr>
+
+        <img src="./img/portfolio/LVB/design.png" style="width:45%; height:45%;" class="imgWrapLeft" alt="Varies of design">
+
+    <div class="textCenter">
+            <h3>Unity</h3>
+            <p>The game engine that was used was Unity, which allowed myself to create three scenes, completeGame, mainMenu, and credits. Also, it allows to hold files such as: materials, textures, scripts, prefabs, scripts, plugins, shaders and etc. </p>
+            <p>By default Unity measures in metres and to ensure that level is done correctly, I made that main player be at 1.78m in the y axis so that it has an average height and then adding the prefabs was easy as it would ensure that the player’s view was accurate and that players would not feel as if they are small while the environment was high and visa versa.</p>
+
+            <h3>Blender</h3>
+            <p>Using Blender, I was able to design low polygon assets that would suit the niche of the game which were exported as a .fbx into Unity's prefab file. Low poly designs were simple to create as it gave the oppportunity to create original assets for the game's aesthetics.</p>
+
+            <h3>Photoshop</h3>
+            <p>It was used to create the textures for each material needed in Unity. Reason it was used as it allows the create the textures that the developer desires to design for their material and so I needed to use it to create materials for the project as there was a specific colour scheme that I needed to give the game a vibrant and calming environment.</p>
+
+    </div>
+</div>
+
+<div class="wrapLeft">
+       
+    <h1 id="hardware" class="title">HARDWARE</h1>
+        <hr>
+
+            <img src="./img/portfolio/LVB/hardware.png" style="width:55%; height:55%;" class="imgWrapRight" alt="Image of the hardware">
+
+        <div class="textCenter">
+            <h3>Gears</h3>
+            <p>The hardware used for the project were:</p>
+            <ul>
+                <li class="bulletPoint">Samsung Gear VR</li>
+                <li class="bulletPoint">Gear VR controller</li>
+                <li class="bulletPoint">Samsung Galaxy S7</li>
+            </ul>
+
+<br>
+
+            <p>In order to build into an Android phone, I opened the command prompt and typed ‘adb devices’ which would find a unique signature file for the device and then I copied that serial number onto the Oculus signature file generator (osig) which provided a file that was placed into ‘Plugins/Andriod/assets/oculussig_9885e6325a42544d5a’ and that would allow to compile the game into the mobile.</p>
+
+        </div>
+</div>
+
+<div class="wrapRight">
+       
+    <h1 id="design" class="title">DESIGN</h1>
+        <hr>
+
+            <img src="./img/portfolio/LVB/level.png" style="width:50%; height:50%;" class="imgWrapLeft" alt="Image of movement code">
+
+            <h3>Three Illusions</h3>
+            <p>For the design I focused on the place illusion (head tracking) and plausiblity illusion to try and create a virtual world that would transport the player and give the illusion of a real place that they can be immersed in. However, I did not implement an embodiment illusion as the task is to change the player's cognition and be able to enjoy and relax in the environment they are in.</p>
+         
+            <h3>Level Design</h3>
+            <p>The game has two puzzles in which the player would walk into a portal, teleporting the player onto the puzzle. The first puzzle is a muscial puzzle in which the player presses the play button in which then the player would have to recreate the sound they hear onto the musical tree; the second puzzle is a maze in which players would have to memorise 4 numbers to reach the end of the door and input the four digits the have memorised, that would slide the door open and from there they can enter the house and interact with the image that would end the demo.</p>
+
+</div>
+
+<div class="wrapLeft">
+       
+    <h1 id="implementation" class="title">IMPLEMENTATION</h1>
+        <hr>
+
+            <img src="./img/portfolio/LVB/movement.png" style="width:50%; height:50%;" class="imgWrapRight" alt="Image of movement code">
+
+        <div class="textCenter">
+            <h3>Code</h3>
+            <p>The code that were implemented were the interactions for the game and its moevement, the movement for the Gear VR controller was done by implemented by having the trigger button being the movement and the turning was by the controllers center point, giving the players a 6 degree of freedom and the touchpad was allowing players to interact with the objects.</p>
+         
+            <h3>Oculus Package & VR Samples</h3>
+            <p>To be able to create a VR game for the Oculus, Samsung Gear VR, I downloaded the OVR SDK package that allowed to get the mapping for the controllers and the gear VR's player and controller prefabs and using the VR samples I was able to modify the eye raycaster script and input scripts to allow the interaction to happen between the player and object.</p>
+
+        </div>
+</div>
+
+<!-- end of la vie est belle --> 
+            
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<!-- start of jQuery-->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+<!-- end of jQuery-->
 
 </body>
 
